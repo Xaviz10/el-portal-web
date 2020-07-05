@@ -1,0 +1,20 @@
+{
+  "name": "el-portal-web",
+  "version": "1.0.0",
+  "description": "Website for El Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xaviz10/el-portal-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xaviz10/el-portal-web/issues"
+  },
+  "homepage": "https://github.com/Xaviz10/el-portal-web#readme"
+}
