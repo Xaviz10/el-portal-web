@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
 }  
 .header{
@@ -136,63 +136,64 @@ body{
 
 .destacados-propertyPreview{
     
-    display: grid;
-    grid-template-rows: auto 60px 0px 20px;
-    height: 480px;
-    grid-template-columns: 100%;
-    border-radius: 5px;
-    /* overflow: hidden; */
-    /* margin-right: 10px; */
+
+    border-radius: 10px;
+    overflow: hidden; 
+    margin-right: 10px;
     transition: 450ms all;
     cursor: pointer;
-    /* transform-origin: center left; */
 }
 
-@media(max-width: 1150px) {
+@media(max-width: 850px) {
     .destacados-propertyPreview {
         max-width: 100%;
     }
   }
 
 .destacados-propertyPreview__img{
-    grid-row: 1 / 3;
-    grid-column: 1 / 1;
+    
+    position: relative;
     height: 100%;
-    width: 100%;
     object-fit: contain;
 }
 
+.main-img{
+    max-width: 100%;
+    width: 100%;
+}
 
 .destacados-propertyPreview__details{
-    grid-row: 2 / 2;
-    grid-column: 1 / 1;
-    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
-    background: linear-gradient(to top, rgba(50, 50, 50, 0.7) 0%, rgba(0, 50, 50,0.3) 100% );
-    color: white;
+    background: linear-gradient(to top, rgba(235, 235, 235, 1) 40%, rgba(235, 235, 235,0.7) 100% );
+
 }
 
 .propertyPreview__details-area{
-   
     grid-column: 1 / 1;
-    margin: 5px 0px;
     padding: 5px 10px;
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 
 .area__value {
-    padding: 0px 2px;
-    font-size: 12px;
+    justify-content: center;
+    padding: 0px 4px;
+    font-size: 14px;
 }
 
 .area__icon{
-    padding: 0px 2px;
+    padding: 0px 4px;
     height: 25px;
 }
 
@@ -210,12 +211,12 @@ body{
 }
 
 .rooms__value {
-    padding: 0px 2px;
-    font-size: 12px;
+    padding: 0px 4px;
+    font-size: 14px;
 }
 
 .rooms__icon{
-    padding: 0px 2px;
+    padding: 0px 4px;
     height: 25px;
 }
 
@@ -233,7 +234,13 @@ body{
 
 }
 
+.baths__value {
+    padding: 0px 4px;
+    font-size: 14px;
+}
+
 .baths__icon{
+    padding: 0px 4px;
     height: 25px;
 }
 
@@ -243,7 +250,7 @@ body{
     grid-column: 4 / 4;
     margin: 5px 0px;
     border-left: 1px solid gray;
-    padding: 5px 10px;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,17 +258,16 @@ body{
 }
 
 .price__value{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .price__type{
     font-size: 10px;
+    color: orange;
 }
 
 .destacados-propertyPreview__title{
-    grid-row: 4 / 4;
-    grid-column: 1 / 1;
-    height: 100%;
+    width: 100%;
     padding: 3px 0px;
     display: inline-grid;
     grid-template-columns: auto 30%;
