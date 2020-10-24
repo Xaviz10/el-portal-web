@@ -6,14 +6,14 @@ body{
 .header{
     background-color: white ;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__img{
-    width: 200px;
+    width: 150px;
     padding: 5px 5px 5px 5px;
     margin-left: 15px;
     cursor: pointer;
@@ -32,8 +32,8 @@ body{
     padding: 5px 5px 5px 5px;
     margin: 5px 15px 5px 15px;
     cursor: pointer;
-    font-size: 20px;
-    transition: transform 0.5s
+    font-size: 18px;
+    transition: transform 0.5s;
 }
 
 .header__menu:hover .menu-element:hover{
@@ -119,7 +119,7 @@ body{
     margin: 0 auto;
 }
 
-  @media(max-width: 1150px) {
+  @media(max-width: 850px) {
     .destacados__container {
         grid-template-columns: 100%;
         grid-gap: 1rem;
@@ -163,6 +163,7 @@ body{
 }
 
 .destacados-propertyPreview__details{
+    height: 40px;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -170,8 +171,8 @@ body{
     left: 0;
     width: 100%;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    background: linear-gradient(to top, rgba(235, 235, 235, 1) 40%, rgba(235, 235, 235,0.7) 100% );
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    background: linear-gradient(to top, rgba(235, 235, 235, 1) 40%, rgba(235, 235, 235,0.5) 100% );
 
 }
 
@@ -187,14 +188,14 @@ body{
 }
 
 .area__value {
-    justify-content: center;
+    
     padding: 0px 4px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .area__icon{
     padding: 0px 4px;
-    height: 25px;
+    height: 20px;
 }
 
 .propertyPreview__details-rooms{
@@ -212,12 +213,12 @@ body{
 
 .rooms__value {
     padding: 0px 4px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .rooms__icon{
     padding: 0px 4px;
-    height: 25px;
+    height: 20px;
 }
 
 .propertyPreview__details-baths{
@@ -236,17 +237,17 @@ body{
 
 .baths__value {
     padding: 0px 4px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .baths__icon{
     padding: 0px 4px;
-    height: 25px;
+    height: 20px;
 }
 
 
 .propertyPreview__details-price{
-    
+ 
     grid-column: 4 / 4;
     margin: 5px 0px;
     border-left: 1px solid gray;
@@ -258,7 +259,7 @@ body{
 }
 
 .price__value{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .price__type{
@@ -267,6 +268,9 @@ body{
 }
 
 .destacados-propertyPreview__title{
+
+    bottom: 0;
+    left: 0;
     width: 100%;
     padding: 3px 0px;
     display: inline-grid;
