@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/components/Styles-home.css">
     <title>El Portal - Agencia Inmobiliaria</title>
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="../assets/static/icon-header-elportal.png" alt="El Portal">
-    <div class="header__menu">
-        <div class="menu-element">Ventas</div>  
-        <div class="menu-element">Arriendos</div>  
-        <div class="menu-element">Empeños</div>  
-        <div class="menu-element">Contactos</div>  
-    </div>
+        <div class="header__menu" id="menu">
+            <a href="#Home" class="menu-element__img">
+                <img src="../assets/static/icon-header-elportal.png" alt="El Portal">
+            </a>
+            <a href="javascript:void(0);" class="menu-element__icon" onclick="myFunction()">
+                <img src="../assets/static/icons-menu.png" alt="Menu">
+            </a>
+            <a href="#Ventas" class="menu-element">Ventas</a>  
+            <a href="#Arriendos" class="menu-element">Arriendos</a>  
+            <a href="#Emp" class="menu-element">Empeños</a>  
+            <a href="#Contactos" class="menu-element">Contactos</a> 
+        </div>
     </header>
 
     <section class="homeView">
@@ -229,5 +234,18 @@
 
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu");
+            console.log(x)
+            if (x.className === "header__menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "header__menu";
+            }
+        }
+    </script>
 </body>
+
 </html>
