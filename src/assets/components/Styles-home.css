@@ -2,6 +2,8 @@ body{
     margin: 0px;
     font-family: 'Spartan', sans-serif;
     background-color: white;
+
+
 }  
 .header{
     background-color: white ;
@@ -13,7 +15,7 @@ body{
 }
 
 .header__menu{
-    position: absolute;
+    position: relative;
     background-color: white ;
     display: flex;
     /* align-items: center; */
@@ -27,7 +29,7 @@ body{
 
 .menu-element__img{
     /* height: 40px; */
-    /* position: relative; */
+    position: relative;
     padding: 5px 5px 5px 5px;
     margin-left: 20px;
     margin-right: calc(100% - 800px);
@@ -50,11 +52,9 @@ body{
 .menu-element {
     padding: 5px 5px 5px 5px;
     margin: 10px 15px 5px 15px;
-    /* width: 10%; */
     cursor: pointer;
     font-size: 22px;
     color: black;
-    /* font-weight: bold; */
     text-shadow: 0.5px 0.5px 0.5px #000000;
     text-decoration: none;
     transition: transform 0.5s;
@@ -67,9 +67,13 @@ body{
 .menu-element__icon{
     padding: 5px 5px 5px 5px;
     margin: 10px 15px 5px 15px;
-    height: 20px;
     cursor: pointer;
     transition: transform 0.5s;
+}
+
+.menu-element__icon img {
+    height: 25px;
+    width: 60px;
 }
 
 .header__menu .menu-element__icon{
@@ -100,10 +104,15 @@ body{
 @media screen and (max-width: 900px) {
     /* .header__menu.responsive {position: relative;} */
     .header__menu.responsive a.menu-element__icon {
-        width: 100%;
+        /* width: 100%;*/
+        margin-right: 40px;
+        align-self: flex-end;
+    }
+    .header__menu.responsive .menu-element__icon {
+        margin-left: 15px;
     }
     .header__menu.responsive  {
-        margin-top: 100px;
+        /* margin-top: 100px; */
         /* padding: 10px 40px; */
         /* position: absolute; */
         display: flex;
@@ -115,6 +124,8 @@ body{
         
         display: flex;
         flex-direction: column;
+        align-items: center;
+
         /* width: 100%; */
 
     }
@@ -169,7 +180,7 @@ body{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 0.7; /* Firefox */
-  }
+}
 
 .categories__tittle{
     font-size: 40px;
@@ -177,7 +188,7 @@ body{
     margin: 20px 10px;
 }
 
-  .destacados{
+.destacados{
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
@@ -198,12 +209,12 @@ body{
     margin: 0 auto;
 }
 
-  @media(max-width: 850px) {
+@media(max-width: 850px) {
     .destacados__container {
         grid-template-columns: 100%;
         grid-gap: 1rem;
     }
-  }
+}
 .destacados__container:hover .destacados-propertyPreview{
     opacity: 0.9;
 }
@@ -215,7 +226,6 @@ body{
 
 .destacados-propertyPreview{
     
-
     border-radius: 10px;
     overflow: hidden; 
     margin-right: 10px;
@@ -227,7 +237,7 @@ body{
     .destacados-propertyPreview {
         max-width: 100%;
     }
-  }
+}
 
 .destacados-propertyPreview__img{
     
@@ -242,7 +252,6 @@ body{
 }
 
 .destacados-propertyPreview__details{
-    height: 40px;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -250,7 +259,7 @@ body{
     left: 0;
     width: 100%;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1fr 1.6fr;
     background: linear-gradient(to top, rgba(235, 235, 235, 1) 40%, rgba(235, 235, 235,0.5) 100% );
 
 }
